@@ -69,4 +69,6 @@ __Require: local data set E (pairs of know material data in the format (ϵ,σ)),
 The distance is defined by the norm <img src="https://render.githubusercontent.com/render/math?math=(\frac{1}{2}C(\epsilon-\epsilon^*)^2%2B\frac{1}{2C}(\sigma-\sigma^*)^2 )^{\frac{1}{2}}">
 
 In the spring bar case, the constraint set is a horizontal line as shown. However this method is prone to be misled by outliers. One example of such is shown below:
-![alt text](docs/parabolicsolveroutlier.png)
+
+![alt text](docs/parasolver_outlier.png)
+
