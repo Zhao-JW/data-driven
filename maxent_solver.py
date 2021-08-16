@@ -51,47 +51,6 @@ def maxent_iteration(E,n,beta_k,z_k,):
 
     return [z_k1,z_k1_bar,beta_k1,p_k1]
 
-def min_distantce():
-    
-    '''
-    # (II): distance minimization
-    k = 0
-    inital = np.random.randint(np.size(y_sample),size = (1))
-    strain0 = E[0][inital][0]
-    stress0 = E[1][inital][0]
-    stress_k = stress0
-    strain_k = strain0
-    stress_k1 = 0
-    strain_k1 = 0
-    flag = True
-
-
-    #in the simple bar spring case no iteration is needed at all, the algorithm can find the nearest in one go easily
-    while (flag and k<5):
-        #find corresponding phase point satisfying constraint set through u and eta
-        u_k = strain_k * L0 + f/k_spring
-        eta_k = 1/C *(f/A - stress_k)
-
-        strain_k_constraint = 1/L0 * (u_k - f/k_spring)
-        stress_k_constraint = stress_k + C* 1/L0 * eta_k
-
-        #locate state assignment
-        index = nearest(strain_k_constraint,stress_k_constraint,E)
-        strain_k1 = E[0][index]
-        stress_k1 = E[1][index]
-
-        if ([strain_k,stress_k] != [strain_k1,stress_k1]):
-            flag = True
-            strain_k = strain_k1
-            stress_k = stress_k1
-            print('k = ',k,strain_k,stress_k)
-            print('k+1: ',strain_k1,stress_k1)
-        else:
-            flag = False
-        k +=1
-    '''
-    return 0
-
 def  result_plot(ax,ax2,ax3):
     #plot the ideal material realtionship and sample points
     ax.plot(x, y_ideal,c = 'gray',label = 'ideal material relationship')
@@ -146,7 +105,6 @@ def plot_evolution(E,y_ideal,p_log,zbar_log):
         ax1.title.set_text('step = '+str(step[i]))
         ax1.plot(np.linspace(0,3,10), f/A* np.ones(10), label = 'constraint set')
     plt.tight_layout()
-
     return 0
 
 def probabilitycheck(p_log,threshold):
@@ -209,7 +167,6 @@ while (flag and k<5000):
     if ( np.array([k]*8) ==np.array([1,5,10,100,500,1000,2000,5000])).any():
         p_log = np.append(p_log,[p_k1],axis=0)
         zbar_log = np.append(zbar_log,[z_k1_bar],axis = 0)
-min_distantce()
 
 p_log = np.append(p_log,[p_k1],axis=0)
 zbar_log = np.append(zbar_log,[z_k1_bar],axis = 0)
