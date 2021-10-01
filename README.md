@@ -35,7 +35,7 @@ Same as above, the state ![](https://latex.codecogs.com/gif.latex?z%20%3D%20%28%
 The compatibility law ![](https://latex.codecogs.com/gif.latex?%5Csigma_e%20%3D%20B_eu), where where u is the array of nodal displacements and ![](https://latex.codecogs.com/gif.latex?B_e) he matrix describing the geometry and connectivity of the truss. The equilibrium law is described as
 ![](https://latex.codecogs.com/gif.latex?%5Csum%5Em_%7Be%3D1%7D%20B_e%5ET%20w_e%20%5Csigma_e%20%3D%20f) where f is the array of applied nodal forces. The constraint set is thus constructed.
 
-**2. Solving the data-driven problem
+**2. Solving the data-driven problem**
 
 Two sets are set up and ready to be solved. Firstly, the constraint set C, which contains all the local points which satisfies the equilibrium and compatibility law, along its boundary conditions. This set is universal and material independent. Secondly, the material set E, which imperfectly characterises the material law by a set of local states. 
 
