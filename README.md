@@ -4,12 +4,12 @@ This is a documentation for the works done in summer 2021 on data driven computi
 
 ### Contents:
 - [A short summary on data driven computing](README.md)
-- [A knonwledge catchup for two possible directions](BO_multifid.md)
+- [A knonwledge catchup for two possible directions](docs/BO_multifid.md)
 - Code implementation
-    + [Simple spring bar example](SpringBar.md)
-    + [Bayesian optimization example](BO.md)
-    + [Iterative minimum distance solver](mindist.md)
-    + [Maximum entropy based solver](maxent.md)
+    + [Simple spring bar example](docs/SpringBar.md)
+    + [Bayesian optimization example](docs/BO.md)
+    + [Iterative minimum distance solver](docs/mindist.md)
+    + [Maximum entropy based solver](docs/maxent.md)
   
 ## A short summary on data driven computing
 
